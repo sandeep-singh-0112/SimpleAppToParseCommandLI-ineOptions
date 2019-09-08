@@ -47,30 +47,27 @@ console.log("your operation = " + operation[1]);
 num1 = num1[1];
 num2 = num2[1];
 operation =operation[1];
+var Mathematics = require('./math');
 
 switch(operation) {
   case 'sum':
     // code block
-	var add = require('./sum');
-	let sum = add.addition(num1, num2);
+	let sum = Mathematics.addition(num1, num2);
 	console.log("Sum is = " + sum);
     break;
   case 'sub':
     // code block
-	var sub = require('./diff');
-	let diff = sub.subtraction(num1, num2);
+	let diff = Mathematics.subtraction(num1, num2);
 	console.log("diff is = " + diff);
     break;
   case 'mul':
     // code block
-	var mul = require('./mul');
-	let mull = mul.multiplication(num1, num2);
+	let mull = Mathematics.multiplication(num1, num2);
 	console.log("mull is = " + mull);
     break;
   case 'div':
     // code block
-	var div = require('./div');
-	let divv = div.division(num1, num2);
+	let divv = Mathematics.division(num1, num2);
 	console.log("divv is = " + divv);
     break;
   default:
